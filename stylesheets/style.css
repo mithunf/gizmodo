@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 5, ../sass/style.scss */
 header {
   width: 100%;
   height: 60px;
@@ -72,7 +72,7 @@ header {
   position: relative;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 .nav-icon {
   display: inline-block;
   vertical-align: middle;
@@ -81,7 +81,7 @@ header {
   padding-right: .88rem;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 .nav-icon-top {
   display: block;
   height: 1px;
@@ -90,7 +90,7 @@ header {
   width: 20px;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 .nav-icon-middle {
   display: block;
   height: 1px;
@@ -99,7 +99,7 @@ header {
   width: 15px;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 .nav-icon-bottom {
   display: block;
   height: 1px;
@@ -108,12 +108,12 @@ header {
   width: 10px;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 .search-icon {
   display: none;
 }
 @media only screen and (min-width: 800px) {
-  /* line 49, ../sass/style.scss */
+  /* line 26, ../sass/style.scss */
   .search-icon {
     display: inline-block;
     width: 20px;
@@ -124,7 +124,7 @@ header {
   }
 }
 
-/* line 60, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .main-heading {
   font-family: 'Nunito', sans-serif;
   font-size: 1.9rem;
@@ -134,19 +134,19 @@ header {
   line-height: 60px;
 }
 @media only screen and (min-width: 800px) {
-  /* line 60, ../sass/style.scss */
+  /* line 37, ../sass/style.scss */
   .main-heading {
     margin-left: 29%;
     font-size: 2.3rem;
   }
 }
 
-/* line 69, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 .btn-login {
   display: none;
 }
 @media only screen and (min-width: 600px) {
-  /* line 69, ../sass/style.scss */
+  /* line 46, ../sass/style.scss */
   .btn-login {
     display: inline-block;
     position: absolute;
