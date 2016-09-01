@@ -63,44 +63,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 5, ../sass/style.scss */
+/* line 6, ../sass/style.scss */
 header {
   width: 100%;
   height: 60px;
-  border-bottom: 1px solid #eaeaea;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border-bottom: 1px solid #eaeaea;
   position: relative;
 }
 
-/* line 11, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 .nav-icon {
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   vertical-align: middle;
   line-height: 60px;
   padding-left: 1.4rem;
   padding-right: .88rem;
 }
-
-/* line 17, ../sass/style.scss */
-.nav-icon-top {
+/* line 18, ../sass/style.scss */
+.nav-icon .nav-icon-top {
   display: block;
   height: 1px;
   background: #000;
   margin-bottom: 5px;
   width: 20px;
 }
-
-/* line 20, ../sass/style.scss */
-.nav-icon-middle {
+/* line 21, ../sass/style.scss */
+.nav-icon .nav-icon-middle {
   display: block;
   height: 1px;
   background: #000;
   margin-bottom: 5px;
   width: 15px;
 }
-
-/* line 23, ../sass/style.scss */
-.nav-icon-bottom {
+/* line 24, ../sass/style.scss */
+.nav-icon .nav-icon-bottom {
   display: block;
   height: 1px;
   background: #000;
@@ -108,14 +111,18 @@ header {
   width: 10px;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .search-icon {
   display: none;
 }
 @media only screen and (min-width: 800px) {
-  /* line 26, ../sass/style.scss */
+  /* line 29, ../sass/style.scss */
   .search-icon {
     display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
     width: 20px;
     height: 22px;
     position: absolute;
@@ -124,41 +131,60 @@ header {
   }
 }
 
-/* line 37, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .main-heading {
   font-family: 'Nunito', sans-serif;
   font-size: 1.9rem;
   font-weight: 600;
   display: inline-block;
   vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: middle;
   line-height: 60px;
+  letter-spacing: 2px;
+  padding-right: 50px;
+  position: relative;
 }
 @media only screen and (min-width: 800px) {
-  /* line 37, ../sass/style.scss */
+  /* line 39, ../sass/style.scss */
   .main-heading {
     margin-left: 29%;
     font-size: 2.3rem;
   }
 }
 
-/* line 46, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .btn-login {
   display: none;
 }
 @media only screen and (min-width: 600px) {
-  /* line 46, ../sass/style.scss */
+  /* line 53, ../sass/style.scss */
   .btn-login {
     display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 7rem;
+    height: 28px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
     position: absolute;
     top: 17px;
     right: 15px;
     background-color: #fff;
     color: #aaa;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
     padding-right: .8rem;
     padding-left: .8rem;
-    width: 7rem;
-    height: 28px;
-    border-radius: 5px;
   }
+}
+/* line 68, ../sass/style.scss */
+.btn-login:hover {
+  background-color: #0093ec;
+  color: #fff;
+  cursor: pointer;
 }

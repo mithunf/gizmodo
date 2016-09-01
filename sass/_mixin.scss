@@ -1,7 +1,3 @@
-@mixin inline-align($value){
-	display: inline-block;
-	vertical-align: $value;
-}
 
 @mixin dimension($width,$height){
 	width: $width;

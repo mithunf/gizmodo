@@ -1,61 +1,73 @@
 @import "compass/reset";
 @import "compass";
-@import "modules/mixin";
+@import "mixin";
+@import "variables";
 
 header{
 	@include dimension(100%,60px);
-	border-bottom: 1px solid #eaeaea;
-	box-sizing:border-box;
+	@include box-sizing(border-box);
+	border-bottom: $borderSize solid $borderColor;
 	position: relative;
 }
 .nav-icon{
-	@include inline-align(middle);
+	@include inline-block;
+	vertical-align: middle;
 	line-height: 60px;
 	padding-left: 1.4rem;
 	padding-right: .88rem;
-}
-.nav-icon-top{
-	@include nav-icon(20px);
-}
-.nav-icon-middle{
-	@include nav-icon(15px);
-}
-.nav-icon-bottom{
-	@include nav-icon(10px);
+	.nav-icon-top{
+		@include nav-icon(20px);
+	}
+	.nav-icon-middle{
+		@include nav-icon(15px);
+	}
+	.nav-icon-bottom{
+		@include nav-icon(10px);
+	}
+
 }
 .search-icon{
 	display: none;
-	@media only screen and (min-width: 800px){
-		display: inline-block;
+	@media only screen and (min-width: $tab){
+		@include inline-block;
 		@include dimension(20px,22px);
 		position: absolute;
 		top: 16px;
 		left: 50px;
 	}
-	
 }
 .main-heading{
 	@include heading-font();
-	@include inline-align(middle);
+	@include inline-block;
+	vertical-align: middle;
 	line-height: 60px;
-	@media only screen and (min-width: 800px){
+	letter-spacing: 2px;
+	padding-right: 50px;
+	position: relative;
+	@media only screen and (min-width: $tab){
 		margin-left: 29%;
 		font-size: 2.3rem;
-	}
+	}	
 }
+
 .btn-login{
 	display: none;
-	@media only screen and (min-width: 600px){
-		display: inline-block;
+	@media only screen and (min-width: $tab-small){
+		@include inline-block;
+		@include dimension(7rem,28px);
+	    @include border-radius(5px);
 		position: absolute;
 		top: 17px;
 		right: 15px;
-	    background-color: #fff;
-	    color: #aaa;
-	    border: 1px solid rgba(0,0,0,0.1);
+	    background-color: $btnBgColor;
+	    color: $btnFontColor;
+	    border: $borderSize solid $borderColor;
 	    padding-right: .8rem;
 	    padding-left: .8rem;
-	    @include dimension(7rem,28px);
-	    border-radius: 5px;
+	}
+	&:hover{
+		background-color: $hover;
+		color: $white1;
+		cursor: pointer;
 	}
 }
