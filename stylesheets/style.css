@@ -1,0 +1,190 @@
+/* line 5, ../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../sass/style.scss */
+header {
+  width: 100%;
+  height: 60px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+}
+
+/* line 12, ../sass/style.scss */
+.nav-icon {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+  line-height: 60px;
+  padding-left: 1.4rem;
+  padding-right: .88rem;
+}
+/* line 18, ../sass/style.scss */
+.nav-icon .nav-icon-top {
+  display: block;
+  height: 1px;
+  background: #000;
+  margin-bottom: 5px;
+  width: 20px;
+}
+/* line 21, ../sass/style.scss */
+.nav-icon .nav-icon-middle {
+  display: block;
+  height: 1px;
+  background: #000;
+  margin-bottom: 5px;
+  width: 15px;
+}
+/* line 24, ../sass/style.scss */
+.nav-icon .nav-icon-bottom {
+  display: block;
+  height: 1px;
+  background: #000;
+  margin-bottom: 5px;
+  width: 10px;
+}
+
+/* line 29, ../sass/style.scss */
+.search-icon {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  /* line 29, ../sass/style.scss */
+  .search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    top: 16px;
+    left: 50px;
+  }
+}
+
+/* line 39, ../sass/style.scss */
+.main-heading {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+  line-height: 60px;
+  letter-spacing: 2px;
+  padding-right: 50px;
+  position: relative;
+}
+@media only screen and (min-width: 800px) {
+  /* line 39, ../sass/style.scss */
+  .main-heading {
+    margin-left: 29%;
+    font-size: 2.3rem;
+  }
+}
+
+/* line 53, ../sass/style.scss */
+.btn-login {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  /* line 53, ../sass/style.scss */
+  .btn-login {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 7rem;
+    height: 28px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    background-color: #fff;
+    color: #aaa;
+    border: 1px solid #eaeaea;
+    padding-right: .8rem;
+    padding-left: .8rem;
+  }
+}
+/* line 68, ../sass/style.scss */
+.btn-login:hover {
+  background-color: #0093ec;
+  color: #fff;
+  cursor: pointer;
+}
