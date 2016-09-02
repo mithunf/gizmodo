@@ -8,66 +8,108 @@ header{
 	@include box-sizing(border-box);
 	border-bottom: $borderSize solid $borderColor;
 	position: relative;
-}
-.nav-icon{
-	@include inline-block;
-	vertical-align: middle;
-	line-height: 60px;
-	padding-left: 1.4rem;
-	padding-right: .88rem;
-	.nav-icon-top{
-		@include nav-icon(20px);
+
+	.nav-icon{
+		@include inline-block;
+		vertical-align: middle;
+		line-height: 60px;
+		padding-left: 1.4rem;
+		padding-right: .88rem;
+		.nav-icon-top{
+			@include nav-icon(20px);
+		}
+		.nav-icon-middle{
+			@include nav-icon(15px);
+		}
+		.nav-icon-bottom{
+			@include nav-icon(10px);
+		}
+
 	}
-	.nav-icon-middle{
-		@include nav-icon(15px);
+	.search-icon{
+		display: none;
+		@media only screen and (min-width: $tab){
+			@include inline-block;
+			@include dimension(20px,22px);
+			position: absolute;
+			top: 16px;
+			left: 50px;
+		}
 	}
-	.nav-icon-bottom{
-		@include nav-icon(10px);
+	.main-heading{
+		@include heading-font();
+		@include inline-block;
+		vertical-align: middle;
+		line-height: 60px;
+		letter-spacing: 2px;
+		padding-right: 50px;
+		position: relative;
+		@media only screen and (min-width: $tab){
+			margin-left: 29%;
+			font-size: 2.3rem;
+		}	
 	}
 
-}
-.search-icon{
-	display: none;
-	@media only screen and (min-width: $tab){
-		@include inline-block;
-		@include dimension(20px,22px);
-		position: absolute;
-		top: 16px;
-		left: 50px;
+	.btn-login{
+		display: none;
+		@media only screen and (min-width: $tab-small){
+			@include inline-block;
+			@include dimension(7rem,28px);
+		    @include border-radius(5px);
+			position: absolute;
+			top: 17px;
+			right: 15px;
+		    background-color: $btnBgColor;
+		    color: $btnFontColor;
+		    border: $borderSize solid $borderColor;
+		    padding-right: .8rem;
+		    padding-left: .8rem;
+		}
+		&:hover{
+			background-color: $hover;
+			color: $white1;
+			cursor: pointer;
+		}
 	}
-}
-.main-heading{
-	@include heading-font();
-	@include inline-block;
-	vertical-align: middle;
-	line-height: 60px;
-	letter-spacing: 2px;
-	padding-right: 50px;
-	position: relative;
-	@media only screen and (min-width: $tab){
-		margin-left: 29%;
-		font-size: 2.3rem;
-	}	
 }
 
-.btn-login{
-	display: none;
-	@media only screen and (min-width: $tab-small){
+.image-scroller{
+	@include dimension(100%,auto);
+	@include box-sizing(border-box);
+	padding: 1.3rem  0 1.3rem 1.3rem;
+	overflow-y: hidden;
+	overflow-x:scroll;
+	white-space: nowrap;
+	border-bottom: $borderSize solid $borderColor;
+	article{
+		margin-right: 1.1rem;
+		width:70%;
+		position: relative;
 		@include inline-block;
-		@include dimension(7rem,28px);
-	    @include border-radius(5px);
-		position: absolute;
-		top: 17px;
-		right: 15px;
-	    background-color: $btnBgColor;
-	    color: $btnFontColor;
-	    border: $borderSize solid $borderColor;
-	    padding-right: .8rem;
-	    padding-left: .8rem;
-	}
-	&:hover{
-		background-color: $hover;
-		color: $white1;
-		cursor: pointer;
+		img{
+			width:100%;
+		}
+		h2{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			color: $white1;
+			white-space: normal;
+    		line-height: 22px;
+    		font-family: 'Open Sans', sans-serif;
+    		margin-bottom: 4px;
+    		span{
+			font-size: 18px;
+			background-color: rgba(0,0,0,0.7);
+			}
+		}
+		@media only screen and (min-width: $tab-small){
+			width:54%;
+		}
+		@media only screen and (min-width: $tab-big){
+			width:30.5%;
+			overflow-x:none;
+		}	
 	}
 }
+
