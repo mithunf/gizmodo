@@ -6,4 +6,4 @@ var articles = [
 		{"images": "images/nqps1tiaqfb9zn3borjf.jpg",
 		 "heading": "Apple's App Store Is About to Get Soooooooo Much Better"},
 	];
-$("#articleTemplate").tmpl(articles).appendTo(".image-scroller");
+$("#scrollerTemplate").tmpl(articles).appendTo(".image-scroller");
