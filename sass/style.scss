@@ -78,16 +78,17 @@ header{
 	@include box-sizing(border-box);
 	padding: 1.3rem  0 1.3rem 1.3rem;
 	overflow-y: hidden;
-	overflow-x:scroll;
+	overflow-x:auto;
 	white-space: nowrap;
 	border-bottom: $borderSize solid $borderColor;
 	article{
-		margin-right: 1.1rem;
+		margin-right: 1.3rem;
 		width:70%;
 		position: relative;
 		@include inline-block;
 		img{
 			width:100%;
+			height: 100%;
 		}
 		h2{
 			position: absolute;
@@ -107,8 +108,10 @@ header{
 			width:54%;
 		}
 		@media only screen and (min-width: $tab-big){
-			width:30.5%;
-			overflow-x:none;
+			width:30.3%;
+		}
+		@media only screen and (min-width: $desktop){
+			width:31.5%;
 		}	
 	}
 }

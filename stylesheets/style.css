@@ -194,13 +194,13 @@ header .btn-login:hover {
   box-sizing: border-box;
   padding: 1.3rem  0 1.3rem 1.3rem;
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
   white-space: nowrap;
   border-bottom: 1px solid #eaeaea;
 }
 /* line 84, ../sass/style.scss */
 .image-scroller article {
-  margin-right: 1.1rem;
+  margin-right: 1.3rem;
   width: 70%;
   position: relative;
   display: inline-block;
@@ -212,8 +212,9 @@ header .btn-login:hover {
 /* line 89, ../sass/style.scss */
 .image-scroller article img {
   width: 100%;
+  height: 100%;
 }
-/* line 92, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .image-scroller article h2 {
   position: absolute;
   bottom: 0;
@@ -224,7 +225,7 @@ header .btn-login:hover {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 4px;
 }
-/* line 101, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .image-scroller article h2 span {
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -238,7 +239,12 @@ header .btn-login:hover {
 @media only screen and (min-width: 800px) {
   /* line 84, ../sass/style.scss */
   .image-scroller article {
-    width: 30.5%;
-    overflow-x: none;
+    width: 30.3%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 84, ../sass/style.scss */
+  .image-scroller article {
+    width: 31.5%;
   }
 }
