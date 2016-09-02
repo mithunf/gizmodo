@@ -63,7 +63,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 6, ../sass/style.scss */
+/* line 1, ../sass/_common.scss */
+:hover {
+  cursor: pointer;
+}
+
+/* line 7, ../sass/style.scss */
 header {
   width: 100%;
   height: 60px;
@@ -73,7 +78,7 @@ header {
   border-bottom: 1px solid #eaeaea;
   position: relative;
 }
-/* line 12, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 header .nav-icon {
   display: inline-block;
   vertical-align: middle;
@@ -85,7 +90,7 @@ header .nav-icon {
   padding-left: 1.4rem;
   padding-right: .88rem;
 }
-/* line 18, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 header .nav-icon .nav-icon-top {
   display: block;
   height: 1px;
@@ -93,7 +98,7 @@ header .nav-icon .nav-icon-top {
   margin-bottom: 5px;
   width: 20px;
 }
-/* line 21, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 header .nav-icon .nav-icon-middle {
   display: block;
   height: 1px;
@@ -101,7 +106,7 @@ header .nav-icon .nav-icon-middle {
   margin-bottom: 5px;
   width: 15px;
 }
-/* line 24, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 header .nav-icon .nav-icon-bottom {
   display: block;
   height: 1px;
@@ -109,12 +114,12 @@ header .nav-icon .nav-icon-bottom {
   margin-bottom: 5px;
   width: 10px;
 }
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 header .search-icon {
   display: none;
 }
 @media only screen and (min-width: 800px) {
-  /* line 29, ../sass/style.scss */
+  /* line 30, ../sass/style.scss */
   header .search-icon {
     display: inline-block;
     vertical-align: middle;
@@ -128,7 +133,7 @@ header .search-icon {
     left: 50px;
   }
 }
-/* line 39, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 header .main-heading {
   font-family: 'Nunito', sans-serif;
   font-size: 1.9rem;
@@ -145,18 +150,18 @@ header .main-heading {
   position: relative;
 }
 @media only screen and (min-width: 800px) {
-  /* line 39, ../sass/style.scss */
+  /* line 40, ../sass/style.scss */
   header .main-heading {
     margin-left: 29%;
     font-size: 2.3rem;
   }
 }
-/* line 53, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 header .btn-login {
   display: none;
 }
 @media only screen and (min-width: 600px) {
-  /* line 53, ../sass/style.scss */
+  /* line 54, ../sass/style.scss */
   header .btn-login {
     display: inline-block;
     vertical-align: middle;
@@ -178,11 +183,10 @@ header .btn-login {
     padding-left: .8rem;
   }
 }
-/* line 68, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 header .btn-login:hover {
   background-color: #0093ec;
   color: #fff;
-  cursor: pointer;
 }
 
 /* line 76, ../sass/style.scss */
@@ -212,7 +216,7 @@ header .btn-login:hover {
 /* line 89, ../sass/style.scss */
 .image-scroller article img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 /* line 93, ../sass/style.scss */
 .image-scroller article h2 {
@@ -229,6 +233,25 @@ header .btn-login:hover {
 .image-scroller article h2 span {
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0.7);
+  padding-left: 6px;
+  -webkit-box-decoration-break: clone;
+  white-space: pre-line;
+}
+/* line 110, ../sass/style.scss */
+.image-scroller article:after {
+  content: '\A';
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all .2s;
+}
+/* line 119, ../sass/style.scss */
+.image-scroller article:hover:after {
+  opacity: .4;
 }
 @media only screen and (min-width: 600px) {
   /* line 84, ../sass/style.scss */
