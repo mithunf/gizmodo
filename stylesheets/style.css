@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 7, ../sass/style.scss */
-header {
+.main-header {
   width: 100%;
   height: 60px;
   -moz-box-sizing: border-box;
@@ -79,7 +79,7 @@ header {
   position: relative;
 }
 /* line 13, ../sass/style.scss */
-header .nav-icon {
+.main-header .nav-icon {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -91,7 +91,7 @@ header .nav-icon {
   padding-right: .88rem;
 }
 /* line 19, ../sass/style.scss */
-header .nav-icon .nav-icon-top {
+.main-header .nav-icon .nav-icon-top {
   display: block;
   height: 1px;
   background: #000;
@@ -99,7 +99,7 @@ header .nav-icon .nav-icon-top {
   width: 20px;
 }
 /* line 22, ../sass/style.scss */
-header .nav-icon .nav-icon-middle {
+.main-header .nav-icon .nav-icon-middle {
   display: block;
   height: 1px;
   background: #000;
@@ -107,7 +107,7 @@ header .nav-icon .nav-icon-middle {
   width: 15px;
 }
 /* line 25, ../sass/style.scss */
-header .nav-icon .nav-icon-bottom {
+.main-header .nav-icon .nav-icon-bottom {
   display: block;
   height: 1px;
   background: #000;
@@ -115,12 +115,12 @@ header .nav-icon .nav-icon-bottom {
   width: 10px;
 }
 /* line 30, ../sass/style.scss */
-header .search-icon {
+.main-header .search-icon {
   display: none;
 }
 @media only screen and (min-width: 800px) {
   /* line 30, ../sass/style.scss */
-  header .search-icon {
+  .main-header .search-icon {
     display: inline-block;
     vertical-align: middle;
     *vertical-align: auto;
@@ -134,7 +134,7 @@ header .search-icon {
   }
 }
 /* line 40, ../sass/style.scss */
-header .main-heading {
+.main-header .main-heading {
   font-family: 'Nunito', sans-serif;
   font-size: 1.9rem;
   font-weight: 600;
@@ -151,18 +151,18 @@ header .main-heading {
 }
 @media only screen and (min-width: 800px) {
   /* line 40, ../sass/style.scss */
-  header .main-heading {
+  .main-header .main-heading {
     margin-left: 29%;
     font-size: 2.3rem;
   }
 }
 /* line 54, ../sass/style.scss */
-header .btn-login {
+.main-header .btn-login {
   display: none;
 }
 @media only screen and (min-width: 600px) {
   /* line 54, ../sass/style.scss */
-  header .btn-login {
+  .main-header .btn-login {
     display: inline-block;
     vertical-align: middle;
     *vertical-align: auto;
@@ -184,7 +184,7 @@ header .btn-login {
   }
 }
 /* line 69, ../sass/style.scss */
-header .btn-login:hover {
+.main-header .btn-login:hover {
   background-color: #0093ec;
   color: #fff;
 }
@@ -233,11 +233,8 @@ header .btn-login:hover {
 .image-scroller article h2 span {
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0.7);
-  padding-left: 6px;
-  -webkit-box-decoration-break: clone;
-  white-space: pre-line;
 }
-/* line 110, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .image-scroller article:after {
   content: '\A';
   position: absolute;
@@ -249,7 +246,7 @@ header .btn-login:hover {
   opacity: 0;
   transition: all .2s;
 }
-/* line 119, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .image-scroller article:hover:after {
   opacity: .4;
 }
@@ -270,4 +267,246 @@ header .btn-login:hover {
   .image-scroller article {
     width: 31.5%;
   }
+}
+
+/* line 130, ../sass/style.scss */
+.subscription {
+  height: 95px;
+  background-color: whitesmoke;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+/* line 137, ../sass/style.scss */
+.subscription .close {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #aaa;
+}
+/* line 144, ../sass/style.scss */
+.subscription h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+}
+/* line 149, ../sass/style.scss */
+.subscription .submit-field {
+  margin-top: 1rem;
+}
+/* line 151, ../sass/style.scss */
+.subscription .submit-field input {
+  border: none;
+  background-color: whitesmoke;
+  border-bottom: #aaa 1px solid;
+  padding-bottom: .5rem;
+  width: 70%;
+}
+/* line 158, ../sass/style.scss */
+.subscription .submit-field button {
+  border-radius: 15px;
+  background-color: #0093ec;
+  color: #fff;
+  height: 30px;
+  line-height: 28px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
+}
+
+/* line 171, ../sass/style.scss */
+aside {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 171, ../sass/style.scss */
+  aside {
+    width: 34%;
+    display: inline-block;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 1px solid #eaeaea;
+  }
+}
+/* line 182, ../sass/style.scss */
+aside .related {
+  padding-top: 2rem;
+}
+/* line 184, ../sass/style.scss */
+aside .related .images-preview {
+  font-size: 0;
+}
+/* line 186, ../sass/style.scss */
+aside .related .images-preview img {
+  width: 33.2%;
+  display: inline-block;
+}
+/* line 192, ../sass/style.scss */
+aside .related .image-view {
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+  background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--A3ICepgq--/c_fill,fl_progressive,g_north,h_180,q_80,w_320/nywucx9bcfcyauu7ieo2.png");
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 201, ../sass/style.scss */
+  .articles-container {
+    padding: 0 1.1rem 0 1.1rem;
+  }
+}
+/* line 207, ../sass/style.scss */
+.articles-container article .article-header {
+  padding: 0 1.1rem 0 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 600px) {
+  /* line 207, ../sass/style.scss */
+  .articles-container article .article-header {
+    padding: 0;
+  }
+}
+/* line 215, ../sass/style.scss */
+.articles-container article .article-header h1 {
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 150%;
+  margin-bottom: 1rem;
+}
+/* line 221, ../sass/style.scss */
+.articles-container article .article-header h1 a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 225, ../sass/style.scss */
+.articles-container article .article-header .article-author {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 227, ../sass/style.scss */
+.articles-container article .article-header .article-author .author {
+  display: block;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: .3rem;
+  font-size: 15px;
+}
+/* line 233, ../sass/style.scss */
+.articles-container article .article-header .article-author .time {
+  color: #aaa;
+  font-size: 13px;
+}
+/* line 238, ../sass/style.scss */
+.articles-container article .article-header .comment-rating {
+  display: inline-block;
+  float: right;
+}
+/* line 242, ../sass/style.scss */
+.articles-container article .article-header .comment {
+  display: inline-block;
+}
+@media only screen and (min-width: 800px) {
+  /* line 242, ../sass/style.scss */
+  .articles-container article .article-header .comment {
+    display: block;
+  }
+}
+/* line 248, ../sass/style.scss */
+.articles-container article .article-header .rating {
+  display: inline-block;
+  margin-left: .5rem;
+}
+@media only screen and (min-width: 800px) {
+  /* line 248, ../sass/style.scss */
+  .articles-container article .article-header .rating {
+    display: block;
+    margin-left: 0;
+    margin-top: .5rem;
+  }
+}
+/* line 257, ../sass/style.scss */
+.articles-container article .article-header img {
+  width: 25px;
+  height: 25px;
+}
+/* line 260, ../sass/style.scss */
+.articles-container article .article-header span {
+  display: block;
+  color: #aaa;
+}
+/* line 265, ../sass/style.scss */
+.articles-container article .odd-img {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* line 265, ../sass/style.scss */
+  .articles-container article .odd-img {
+    width: 29%;
+  }
+}
+/* line 271, ../sass/style.scss */
+.articles-container article .odd-para {
+  margin: 0 1.1rem 0 1.1rem;
+  font-size: 18px;
+  line-height: 1.7;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+@media only screen and (min-width: 600px) {
+  /* line 271, ../sass/style.scss */
+  .articles-container article .odd-para {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    border: none;
+  }
+}
+/* line 285, ../sass/style.scss */
+.articles-container article .even-img {
+  width: 100%;
+}
+/* line 289, ../sass/style.scss */
+.articles-container article .even-para {
+  margin: 0 1.1rem 0 1.1rem;
+  font-size: 18px;
+  line-height: 1.7;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+@media only screen and (min-width: 600px) {
+  /* line 289, ../sass/style.scss */
+  .articles-container article .even-para {
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 206, ../sass/style.scss */
+  .articles-container article {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 201, ../sass/style.scss */
+  .articles-container {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+/* line 314, ../sass/style.scss */
+footer .footer-subscription {
+  width: 30%;
 }
