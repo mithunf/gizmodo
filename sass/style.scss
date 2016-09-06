@@ -155,7 +155,7 @@
 				padding-bottom: .5rem;
 				width: 70%;
 			}
-			button{
+			.aside-button{
 			    border-radius: 15px;
 			    background-color: #0093ec;
 			    color: $white1;
@@ -170,7 +170,7 @@
 .main-content{
 	border-bottom: $borderSize solid $borderColor;
 	padding-bottom: 20px;
-	button{
+	.more-stories-button{
 		display:block;
    		margin: 0 auto;
    		background-color: #fff;
@@ -286,6 +286,12 @@ aside{
 					margin-top: .5rem;
 				}
 			}
+			.options{
+				@include inline-block;
+				@media only screen and (min-width: $tab-big){
+					display: block;
+				}
+			}
 			img{
 				@include dimension(25px,25px);
 			}
@@ -346,8 +352,10 @@ aside{
 .more-stories{
 	h2{
 		display: block;
+		padding-top: 1rem;
 		padding-left: 1rem;
 		font-size: 10px;
+		border-top: $borderSize solid $borderColor;
 	}
 	article{
 		@include box-sizing(border-box);
@@ -369,13 +377,46 @@ aside{
 
 footer{
 	padding: 1rem;
-	.footer-subscription{
-		width:100%;
-		display:block;
+	.footer-subscription{ 
    		margin: 0 auto;
    		@media only screen and (min-width: $tab-small){
    			width: 540px;
    		}
+   		@media only screen and (min-width: $desktop){
+   			width: 350px;
+   		}
+	}
+	.about{
+		margin: 0 auto;
+		display: block;
+		width: 260px;
+		margin-top: 2rem;
+		ul li{
+			padding-left: .3rem;
+			padding-right: .3rem;
+			list-style: none;
+			display: inline-block;
+			font-size: 15px;
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+	}
+	.copyright{
+		display: block;
+		width: 65%;
+		margin: 0 auto;
+		margin-top: 2rem;
+		ul{
+			text-align: center;
+		}
+		ul li{
+			
+			display: inline-block;
+			list-style: none;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 12px;
+			color: $black2;
+			padding: .5rem .3rem;
+		}
 	}
 
 }

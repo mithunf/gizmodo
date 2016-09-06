@@ -15,7 +15,8 @@ var mainArticles = [
 		"author": "Hudson Hongo",
 		"time": "29 minutes ago",
 		"commentImage": "images/2-512.png",
-		"ratingImage": "images/download.png",
+		"ratingImage": "images/star.png",
+		"optionImage": "images/bank-17-128.png",
 		"mainImage": "images/teguqjqe9gcylkja79ry.jpg",
 		"para": "Sometimes, all a man has in this world is his name, but according to Intel,antivirus pioneer and living cautionary tale John McAfee "
 		}
