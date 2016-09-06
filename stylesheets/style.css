@@ -622,9 +622,19 @@ aside .related #image-view3 {
   font-size: 10px;
 }
 
-/* line 371, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
+footer {
+  padding: 1rem;
+}
+/* line 372, ../sass/style.scss */
 footer .footer-subscription {
-  width: 70%;
+  width: 100%;
   display: block;
   margin: 0 auto;
+}
+@media only screen and (min-width: 600px) {
+  /* line 372, ../sass/style.scss */
+  footer .footer-subscription {
+    width: 540px;
+  }
 }
