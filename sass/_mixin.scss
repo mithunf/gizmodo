@@ -1,0 +1,19 @@
+
+@mixin dimension($width,$height){
+	width: $width;
+	height:$height;
+}
+
+@mixin heading-font(){
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.9rem;
+	font-weight: 600;
+}
+
+@mixin nav-icon($width){
+	display: block;
+    height: 1px;
+    background: #000;
+    margin-bottom: 5px;
+    width:$width;
+}
