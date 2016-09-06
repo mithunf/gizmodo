@@ -1,0 +1,428 @@
+@import "compass/reset";
+@import "compass";
+@import "mixin";
+@import "variables";
+@import "common";
+
+.main-header{
+	@include dimension(100%,60px);
+	@include box-sizing(border-box);
+	border-bottom: $borderSize solid $borderColor;
+	position: relative;
+
+	.nav-icon{
+		@include inline-block;
+		vertical-align: middle;
+		line-height: 60px;
+		padding-left: 1.4rem;
+		padding-right: .88rem;
+		.nav-icon-top{
+			@include nav-icon(20px);
+		}
+		.nav-icon-middle{
+			@include nav-icon(15px);
+		}
+		.nav-icon-bottom{
+			@include nav-icon(10px);
+		}
+
+	}
+	.search-icon{
+		display: none;
+		@media only screen and (min-width: $tab){
+			@include inline-block;
+			@include dimension(20px,22px);
+			position: absolute;
+			top: 16px;
+			left: 50px;
+		}
+	}
+	.main-heading{
+		@include heading-font();
+		@include inline-block;
+		vertical-align: middle;
+		line-height: 60px;
+		letter-spacing: 2px;
+		padding-right: 50px;
+		position: relative;
+		@media only screen and (min-width: $tab){
+			margin-left: 29%;
+			font-size: 2.3rem;
+		}	
+	}
+
+	.btn-login{
+		display: none;
+		@media only screen and (min-width: $tab-small){
+			@include inline-block;
+			@include dimension(7rem,28px);
+		    @include border-radius(5px);
+			position: absolute;
+			top: 17px;
+			right: 15px;
+		    background-color: $btnBgColor;
+		    color: $btnFontColor;
+		    border: $borderSize solid $borderColor;
+		    padding-right: .8rem;
+		    padding-left: .8rem;
+		}
+		&:hover{
+			background-color: $hover;
+			color: $white1;
+		}
+	}
+}
+
+.image-scroller{
+	@include dimension(100%,auto);
+	@include box-sizing(border-box);
+	padding: 1.3rem  0 1.3rem 1.3rem;
+	overflow-y: hidden;
+	overflow-x:auto;
+	white-space: nowrap;
+	border-bottom: $borderSize solid $borderColor;
+	article{
+		margin-right: 1.3rem;
+		width:70%;
+		position: relative;
+		@include inline-block;
+		img{
+			width:100%;
+			height: auto;
+		}
+		h2{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			color: $white1;
+			white-space: normal;
+    		line-height: 22px;
+    		font-family: 'Open Sans', sans-serif;
+    		margin-bottom: 4px;
+    		span{
+			font-size: 18px;
+			background-color: rgba(0,0,0,0.7);
+			}
+		}
+		&:after {
+		    content: '\A';
+		    position: absolute;
+		    width: 100%; height:99%;
+		    top:0; left:0;
+		    background:rgba(0,0,0,0.6);
+		    opacity: 0;
+		    transition: all .2s;
+		}
+		&:hover:after {
+		    opacity: .4;
+		}
+		@media only screen and (min-width: $tab-small){
+			width:54%;
+		}
+		@media only screen and (min-width: $tab-big){
+			width:30.3%;
+		}
+		@media only screen and (min-width: $desktop){
+			width:31.5%;
+		}	
+	}
+}
+	.subscription{
+		height:95px;
+		background-color: rgb(245, 245, 245);
+		padding-top: 1rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		position: relative;
+		.close{
+			@include inline-block;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			color: $black2;
+		}
+		h3{
+			font-family: 'Open Sans', sans-serif;
+			font-weight: normal;
+			font-size: 13px;
+		}
+		.submit-field{
+			margin-top: 1rem;
+			input{
+				border:none;
+				background-color: rgb(245, 245, 245);
+				border-bottom: $black2 $borderSize solid;
+				padding-bottom: .5rem;
+				width: 70%;
+			}
+			.aside-button{
+			    border-radius: 15px;
+			    background-color: #0093ec;
+			    color: $white1;
+		        height: 30px;
+    			line-height: 28px;
+    			padding-left: 1rem;
+    			padding-right: 1rem;
+    			border:none;
+			}
+		}	
+	}
+.main-content{
+	border-bottom: $borderSize solid $borderColor;
+	padding-bottom: 20px;
+	.more-stories-button{
+		display:block;
+   		margin: 0 auto;
+   		background-color: #fff;
+	    color: #0093ec;
+	    height: 40px;
+	    line-height: 40px;
+	    border-radius: 20px;
+	    letter-spacing: 0.5px;
+	    padding-left: 1.65rem;
+	    padding-right: 1.65rem;
+	    border: 1px solid rgba(0,0,0,0.2);
+	    border-color: #0093ec;
+	}
+}
+aside{
+	display: none;
+	@media only screen and (min-width: $desktop){
+		width:34%;
+		display: inline-block;
+		padding-top: 2rem;
+		padding-left:1rem;
+		padding-right: 1rem;
+		@include box-sizing(border-box);
+	}
+	.related{
+		padding-top: 2rem;
+		.images-preview{
+			font-size: 0;
+			img{
+				width: 33.2%;
+				display: inline-block;
+			}
+		}
+		.image-view{
+			display: none;
+			width: 100%;
+			height: 170px;
+			background-position: center;
+			background-size: cover;
+		}
+		#image-view1{
+			@include inline-block;
+			background-image: url('../images/nywucx9bcfcyauu7ieo2.png');
+		}
+		#image-view2{
+			background-image: url('../images/kv8nrd1xirm7w34a1r5q.png');
+		}
+		#image-view3{
+			background-image: url('../images/smivram2py7s41pdhup5.jpg');
+		}
+	}
+}
+
+.articles-container{
+	@media only screen and (min-width: $tab-small){
+		padding: 0 1.1rem 0 1.1rem;
+	}
+	
+	article{
+		.article-header{
+			padding: 0 1.1rem 0 1.1rem;
+			@media only screen and (min-width: $tab-small){
+				padding: 0;
+			}
+			margin-top: 2rem;
+			margin-bottom: 1.5rem;
+			h1{
+				font-size: 24px;
+				font-family: 'Oswald', sans-serif;
+				line-height: 150%;
+				margin-bottom: 1rem;
+			}
+			h1 a{
+				text-decoration: none;
+				color: $black1;
+			}
+			.article-author{
+				@include inline-block;
+				.author{
+					display: block;
+					color: $black3;
+					margin-bottom: .3rem;
+					font-size: 15px;
+					@media only screen and (min-width: $tab-big){
+						display: inline-block;
+					}
+				}
+				.time{
+					color: $black2;
+					font-size: 13px;
+					@media only screen and (min-width: $tab-big){
+						@include inline-block;
+					}
+				}
+			}
+			.comment-rating{
+				@include inline-block;
+				float: right;
+			}
+			.comment{
+				@include inline-block;
+				@media only screen and (min-width: $tab-big){
+					display: block;
+				}
+			}
+			.rating{
+				@include inline-block;
+				margin-left: .5rem;
+				@media only screen and (min-width: $tab-big){
+					display: block;
+					margin-left: 0;
+					margin-top: .5rem;
+				}
+			}
+			.options{
+				@include inline-block;
+				vertical-align: top;
+				img{
+					@include dimension(30px,30px);
+				}
+				@media only screen and (min-width: $tab-big){
+					display: block;
+				}
+			}
+			img{
+				@include dimension(25px,25px);
+			}
+			span{
+				display: block;
+				color: $black2;
+			}
+		}
+		.odd-img{
+			width: 100%;
+			@media only screen and (min-width: $tab-small){
+				width:29%;
+			}
+		}
+		.odd-para{
+			margin: 0 1.1rem 0 1.1rem;
+		    font-size: 18px;
+			line-height: 1.7;
+			padding-bottom: 1rem;
+			margin-bottom: 1rem;
+			border-bottom: $borderSize solid $borderColor;
+			@media only screen and (min-width: $tab-small){
+				@include inline-block;
+				vertical-align: top;
+				width: 60%;
+				border:none;
+			}
+		}
+		.even-img{
+			@media only screen and (min-width: $tab-small){
+				width: 95%;
+			}
+		}
+		.even-para{
+			margin: 0 1.1rem 0 1.1rem;
+		    font-size: 18px;
+			line-height: 1.7;
+			padding-bottom: 1rem;
+			margin-bottom: 1rem;
+			border-bottom: $borderSize solid $borderColor;
+			@media only screen and (min-width: $tab-small){
+				border-bottom: none;
+			}
+		}
+		@media only screen and (min-width: $tab-small){
+			border-bottom: $borderSize solid $borderColor;
+			margin-bottom: 2rem;
+		}
+	}
+	@media only screen and (min-width: $desktop){
+			width:60%;
+			@include inline-block;
+			vertical-align: top;
+			border-left: $borderSize solid $borderColor;
+		}
+	
+}
+.more-stories{
+	h2{
+		display: block;
+		padding-top: 1rem;
+		padding-left: 1rem;
+		font-size: 10px;
+		border-top: $borderSize solid $borderColor;
+	}
+	article{
+		@include box-sizing(border-box);
+		padding: 1rem;
+		@include inline-block;
+		vertical-align: top;
+		width: 50%;
+		@media only screen and (min-width: $tab-small){
+			width: 25%;
+		}
+		img{
+			width: 100%;
+		}
+		span{
+			font-size: 10px;
+		}
+	}
+}
+
+footer{
+	padding: 1rem;
+	.footer-subscription{ 
+   		margin: 0 auto;
+   		@media only screen and (min-width: $tab-small){
+   			width: 540px;
+   		}
+   		@media only screen and (min-width: $desktop){
+   			width: 350px;
+   		}
+	}
+	.about{
+		margin: 0 auto;
+		display: block;
+		width: 260px;
+		margin-top: 2rem;
+		ul li{
+			padding-left: .3rem;
+			padding-right: .3rem;
+			list-style: none;
+			display: inline-block;
+			font-size: 15px;
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+	}
+	.copyright{
+		display: block;
+		width: 65%;
+		margin: 0 auto;
+		margin-top: 2rem;
+		ul{
+			text-align: center;
+		}
+		ul li{
+			
+			display: inline-block;
+			list-style: none;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 12px;
+			color: $black2;
+			padding: .5rem .3rem;
+		}
+	}
+
+}
+
+
+
