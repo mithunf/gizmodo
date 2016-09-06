@@ -135,7 +135,7 @@
 		padding-right: 1rem;
 		position: relative;
 		.close{
-			display: inline-block;
+			@include inline-block;
 			position: absolute;
 			top: 5px;
 			right: 5px;
@@ -169,6 +169,21 @@
 	}
 .main-content{
 	border-bottom: $borderSize solid $borderColor;
+	padding-bottom: 20px;
+	button{
+		display:block;
+   		margin: 0 auto;
+   		background-color: #fff;
+	    color: #0093ec;
+	    height: 40px;
+	    line-height: 40px;
+	    border-radius: 20px;
+	    letter-spacing: 0.5px;
+	    padding-left: 1.65rem;
+	    padding-right: 1.65rem;
+	    border: 1px solid rgba(0,0,0,0.2);
+	    border-color: #0093ec;
+	}
 }
 aside{
 	display: none;
@@ -197,7 +212,7 @@ aside{
 			background-size: cover;
 		}
 		#image-view1{
-			display: inline-block;
+			@include inline-block;
 			background-image: url('../images/nywucx9bcfcyauu7ieo2.png');
 		}
 		#image-view2{
@@ -248,22 +263,22 @@ aside{
 					color: $black2;
 					font-size: 13px;
 					@media only screen and (min-width: $tab-big){
-						display: inline-block;
+						@include inline-block;
 					}
 				}
 			}
 			.comment-rating{
-				display: inline-block;
+				@include inline-block;
 				float: right;
 			}
 			.comment{
-				display: inline-block;
+				@include inline-block;
 				@media only screen and (min-width: $tab-big){
 					display: block;
 				}
 			}
 			.rating{
-				display: inline-block;
+				@include inline-block;
 				margin-left: .5rem;
 				@media only screen and (min-width: $tab-big){
 					display: block;
@@ -293,15 +308,16 @@ aside{
 			margin-bottom: 1rem;
 			border-bottom: $borderSize solid $borderColor;
 			@media only screen and (min-width: $tab-small){
-				display: inline-block;
+				@include inline-block;
 				vertical-align: top;
 				width: 60%;
 				border:none;
 			}
 		}
 		.even-img{
-			width: 95%;
-			
+			@media only screen and (min-width: $tab-small){
+				width: 95%;
+			}
 		}
 		.even-para{
 			margin: 0 1.1rem 0 1.1rem;
@@ -321,16 +337,41 @@ aside{
 	}
 	@media only screen and (min-width: $desktop){
 			width:60%;
-			display: inline-block;
+			@include inline-block;
 			vertical-align: top;
 			border-left: $borderSize solid $borderColor;
 		}
 	
 }
+.more-stories{
+	h2{
+		display: block;
+		padding-left: 1rem;
+		font-size: 10px;
+	}
+	article{
+		@include box-sizing(border-box);
+		padding: 1rem;
+		@include inline-block;
+		vertical-align: top;
+		width: 50%;
+		@media only screen and (min-width: $tab-small){
+			width: 25%;
+		}
+		img{
+			width: 100%;
+		}
+		span{
+			font-size: 10px;
+		}
+	}
+}
 
 footer{
 	.footer-subscription{
-		width:30%;
+		width:70%;
+		display:block;
+   		margin: 0 auto;
 	}
 
 }

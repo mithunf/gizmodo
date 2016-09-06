@@ -21,3 +21,15 @@ var mainArticles = [
 		}
 ];
 $("#contentArticleTemplate").tmpl(mainArticles).appendTo(".articles-container");
+
+var moreStoriesArticles = [
+		{"image": "images/q1gup0rbsxv4y6jgi8oa.jpg",
+		 "heading": "Check out a Century of Stop-Motion Animation, From King Kong"},
+		{"image": "images/xlu2m3hzhaeozibcw6oj.jpg",
+		 "heading": "Oklahoma Shuts Down Wells In the Wake of the Quake"},
+		{"image": "images/ytcj23qfaj6e8jrh4kio.jpg",
+		 "heading": "Owner of Satellite On Doomed SpaceX Rocket Wants $50 Million"},
+		{"image": "images/rlucpsncfpwbubqs6clf.jpg",
+		 "heading": "Take a Day Off Between CrossFit Workouts, Study Says"},
+];
+$("#moreArticlesTemplate").tmpl(moreStoriesArticles).appendTo(".more-stories");

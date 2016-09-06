@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-	
+
 </head>
 <body>
 	<section class="main-wrapper">
@@ -22,6 +22,7 @@
 			<button class="btn-login">Login/Signup</button>
 		</header>
 		<section class="image-scroller"></section>
+
 		<section class="main-content">
     		<aside>
 				<section class="subscription">
@@ -45,6 +46,10 @@
 				</section>
 			</aside>
 			<section class="articles-container"></section>
+			<section class="more-stories">
+				<h2>MORE FROM GIZMODO</h2>
+			</section>
+			<button>more stories</button>
     	</section>
 		
 		<footer>
@@ -127,6 +132,12 @@
 		</header>
 		<img src="${mainImage}" alt="image-view" class="even-img">
 		<p class="even-para">${para}</p>
+	</article>
+</script>
+<script id="moreArticlesTemplate" type="text/x-jQuery-tmpl">
+	<article>
+		<img src="${image}">
+		<span>${heading}</span>
 	</article>
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
